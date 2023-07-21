@@ -3,7 +3,7 @@ const BASE_URL = 'http://localhost/SistemaclaseSexto/';
 const HOST = 'localhost';
 const USER='root';
 const PASSWORD = '';
-const DATA_BASE='DBSISTEMAFINALSEXTO';
+const DATA_BASE='dbsistemafinalsexto';
 const CHARSET = 'charset=utf8';
 const TITLE='Sistema de Sexto';
 const CLIENTE_ID='';

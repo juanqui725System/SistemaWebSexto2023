@@ -4,7 +4,7 @@ class Query extends ConexionDB
     private $cnn,$con,$sql,$datos;
     public function __construct()
     {
-        $this->cnn = new ConexionDB(HOST,USER,PASSWORD,DATA_BASE);
+        $this->cnn = new ConexionDB(HOST,USER,PASSWORD,DATA_BASE,PORT);
         $this->con=$this->cnn->connect();
     }
     public function select(string $sql )
