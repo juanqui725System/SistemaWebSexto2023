@@ -1,12 +1,11 @@
 <?php
-const BASE_URL = 'http://localhost';
+const BASE_URL = 'http://localhost/SistemaclaseSexto/';
 const HOST = 'localhost';
 const USER='root';
 const PASSWORD = '';
-const DATA_BASE='dbproyectofinal';
-const CHARSET = 'utf8';
-const VERSION = 'v1';
-CONST PORT=3037; //maria db 3037,mysql 3036
-const TITLE='Sistema Proyecto Final';
+const DATA_BASE='DBSISTEMAFINALSEXTO';
+const CHARSET = 'charset=utf8';
+const TITLE='Sistema de Sexto';
 const CLIENTE_ID='';
+const PORT=3037;
 ?>

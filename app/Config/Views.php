@@ -1,17 +1,15 @@
 <?php
-class Views
-{
+class Views{
     public function getView($ruta,$vista,$data="")
     {
-        if($ruta=="home")
-        {
+        if($ruta=="home"){
             $vista="app/Views/".$vista.".php";
         }
         else
         {
-            $vista="app/Views/".$ruta.".php";
+            echo "Vista error";
+            $vista="app/Views/".$ruta."/".$vista.".php";
         }
-        return $vista;
+        require $vista;
     }
 }
-?>
