@@ -1,5 +1,5 @@
 <?php
-const BASE_URL = 'http://www.webfinal.com/';//'http://localhost/SistemaclaseSexto/';
+const BASE_URL = 'https://www.webfinal.com/';//'http://localhost/SistemaclaseSexto/';
 const HOST = 'localhost';
 const USER='root';
 const PASSWORD = '';
