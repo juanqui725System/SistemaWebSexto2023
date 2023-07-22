@@ -1,7 +1,7 @@
 <?php
 // require_once 'app/Config/Controller.php';
 // require_once 'app/Config/Views.php';
-class Home1 extends Controller
+class Inicio extends Controller
 {
     public function __construct()
     {
@@ -11,7 +11,8 @@ class Home1 extends Controller
     public function index()
     {
         $data['title'] ="Pagina Principal";
-        $this->views->getView('home','index',$data);
+        $this->views->getView('inicio','index',$data);
     }
+   
 }
 ?>

@@ -11,6 +11,12 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="<?php echo BASE_URL;?>principal/contactos" class="nav-link">Contactos</a>
       </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="<?php echo BASE_URL;?>principal/shop" class="nav-link">Tienda</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="<?php echo BASE_URL;?>principal/about" class="nav-link">Servicios</a>
+      </li>
     </ul>
 
     <!-- Right navbar links -->

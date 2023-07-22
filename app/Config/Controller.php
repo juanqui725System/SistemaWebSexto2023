@@ -1,6 +1,7 @@
 <?php
 class Controller{
-    public function __construct(){
+    public function __construct()
+    {
         $this->views = new Views();
         $this->cargarModel();
     }
@@ -14,5 +15,9 @@ class Controller{
             $this->model = new $model();
             //$model = new $model();
         }
+        /*else
+        {
+            die($ruta);
+        }*/
     }
 }
