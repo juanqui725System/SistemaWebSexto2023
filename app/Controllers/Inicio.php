@@ -1,6 +1,6 @@
 <?php
 //require_once 'app/Config/Controller.php';
-require_once 'app/Config/Controller.php';
+//require_once 'app/Config/Controller.php';
 // require_once 'app/Config/Views.php';
 class Inicio extends Controller
 {
@@ -13,7 +13,6 @@ class Inicio extends Controller
     {
         $data['title'] ="Pagina Principal";
         $data['categorias'] =$this->model->getCategoria();
-        print_r($data);
         $this->views->getView('inicio','index',$data);
     }
    

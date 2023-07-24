@@ -17,8 +17,8 @@ class ConeccionDB {
     {
         try
         {
-           // $this->conn = new mysqli_conect($this->host, $this->username, $this->password, $this->dbname,$this->port);
-           $mysqli = new mysqli("127.0.0.1", "root", "", "dbsistemafinalsexto","3037");
+           $this->conn = new mysqli($this->host, $this->username, $this->password, $this->dbname,$this->port);
+           //$mysqli = new mysqli("127.0.0.1", "root", "", "dbsistemafinalsexto","3307");
 
         }
         catch(Exception $ex)
@@ -29,9 +29,7 @@ class ConeccionDB {
                 die("Error al conectar a la base de datos: " . $this->conn->connect_error);
             }
         }
-       /*
         return $this->conn;
-        */
     }
     public function close() {
         $this->conn->close();

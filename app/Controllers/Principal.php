@@ -1,6 +1,4 @@
 <?php
-// require_once 'app/Config/Controller.php';
-// require_once 'app/Config/Views.php';
 class Principal extends Controller
 {
     public function __construct()
@@ -24,12 +22,7 @@ class Principal extends Controller
          $data['title'] ="Nuestro Producto";
          $this->views->getView('principal','shop',$data);
      }
-     //Detalle de la Vista por  Id
-     public function detail($id_producto)
-     {
-         $data['title'] ="Nuestro Equipo";
-         $this->views->getView('principal','detail',$data);
-     }
+    
      //contactos
      public function contactos()
      {

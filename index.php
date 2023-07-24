@@ -31,6 +31,7 @@ if(file_exists($dirControllers))
     require_once $dirControllers;
     try
     {
+        $aux=$controller;
         $controller=new $controller();
         if(method_exists($controller,$metodo))
         {

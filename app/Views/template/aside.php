@@ -52,6 +52,36 @@
               </li>
             </ul>
           </li>
+          <!--Menu de producto-->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+               Producto
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo BASE_URL;?>producto/categoria" class="nav-link">
+                  <i class="fas fa-home nav-icon"></i>
+                  <p>Categoria</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo BASE_URL;?>producto/producto" class="nav-link active">
+                  <i class="far fa-user nav-icon"></i>
+                  <p>Producto</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./index3.html" class="nav-link">
+                  <i class="fas fa-key nav-icon"></i>
+                  <p>Varios</p>
+                </a>
+              </li>
+            </ul>
+          </li>
           <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>

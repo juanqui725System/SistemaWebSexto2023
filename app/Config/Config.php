@@ -8,5 +8,5 @@ const CHARSET = 'charset=utf8';
 const TITLE='Venta';
 const MONEDA='Bs.';
 const CLIENTE_ID='';
-const PORT=3037;
+const PORT=3307;
 ?>

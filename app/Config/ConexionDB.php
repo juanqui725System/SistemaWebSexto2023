@@ -3,7 +3,7 @@ class ConexionDB {
     private $conn;
     public function __construct()
     {
-        $pdo="mysql:host=".HOST.";port=3037;dbname=".DATA_BASE;
+        $pdo="mysql:host=".HOST.";port=".PORT.";dbname=".DATA_BASE;
         try
         {
             $this->conn = new PDO($pdo, USER, PASSWORD);
