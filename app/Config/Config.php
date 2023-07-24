@@ -1,6 +1,6 @@
 <?php
-const BASE_URL = 'https://www.webfinal.com/';//'http://localhost/SistemaclaseSexto/';
-const HOST = 'localhost';
+const BASE_URL = 'http://www.webfinal.com/';//'http://localhost/SistemaclaseSexto/';
+const HOST = '127.0.0.1';
 const USER='root';
 const PASSWORD = '';
 const DATA_BASE='dbsistemafinalsexto';

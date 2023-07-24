@@ -15,9 +15,9 @@ class Controller{
             $this->model = new $model();
             //$model = new $model();
         }
-        /*else
+        else
         {
             die($ruta);
-        }*/
+        }
     }
 }
