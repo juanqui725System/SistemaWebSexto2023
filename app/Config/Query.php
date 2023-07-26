@@ -20,14 +20,16 @@ class Query extends ConexionDBSql//ConexionDB
     }
     public function selectAll(string $sql)
     {
-        /*$this->sql=$sql;
+        $this->sql=$sql;
+        /* Consulta PDO*/
+        //$result= $this->con->prepare($this->sql);
+        //$result->execute();
+        //$data=$result->fetchAll(PDO::FETCH_ASSOC);
+        
+        //consulta MySqli//
         $result= $this->con->prepare($this->sql);
         $result->execute();
-        $data=$result->fetchAll(PDO::FETCH_ASSOC);
-        */
-        //----------------//
-        //$result=mysqli_query($this->con,$this->sql);
-        //$data=$result->fetch_all($result,MYSQLI_ASSOC);
+        $data=$result->get_result();
         return $data;
     }
     public function save(string $sql, array $datos)

@@ -17,7 +17,8 @@ class ConexionDBSql {
     {
         try
         {
-           $this->conn = new mysqli($this->host, $this->username, $this->password, $this->dbname);
+           $this->conn = new mysqli($this->host, $this->username, $this->password, $this->dbname,$this->port);
+           //$this->conn = new mysqli($this->host, $this->username, $this->password, $this->dbname);
            if($this->conn->connect_errno)
            {
             printf("Error al conectarse: %s\n",$this->conn->connect_errno);
@@ -26,10 +27,6 @@ class ConexionDBSql {
         }
         catch(Exception $ex)
         {
-            
-            if ($this->conn->connect_error) {
-                die("Error al conectar a la base de datos: " . $this->conn->connect_error);
-            }
             die ("Error al cargar el metodo mysl".$ex->getMessage());
             exit;
         }
