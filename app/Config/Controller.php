@@ -13,7 +13,6 @@ class Controller{
         {
             require_once $ruta;
             $this->model = new $model();
-            //$model = new $model();
         }
         else
         {
