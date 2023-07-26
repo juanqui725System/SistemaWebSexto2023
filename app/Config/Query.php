@@ -4,8 +4,7 @@ class Query extends ConexionDBSql//ConexionDB
     private $cnn,$pdo,$con,$sql,$datos;
     public function __construct()
     {
-        echo "Erroroooo alconectarse";
-        $this->cnn = new ConexionDBSql(HOST,USER,PASSWORD,DATA_BASE);
+        $this->cnn = new ConexionDBSql(HOST,USER,PASSWORD,DATA_BASE,PORT);
         $this->con=$this->cnn->connect();
 
         //$this->pdo = new ConexionDB();

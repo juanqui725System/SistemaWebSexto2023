@@ -1,9 +1,9 @@
 <?php
-const BASE_URL = 'http://www.webfinal.com/';//'http://localhost/SistemaclaseSexto/';//'http://www.webfinal.com/';
+const BASE_URL = 'https://www.webfinal.com/';//'http://localhost/SistemaclaseSexto/';//'http://www.webfinal.com/';
 const HOST = '127.0.0.1';
 const USER='root';
 const PASSWORD = 'Admin123';
-const DATA_BASE='dbsistemafinalsexto';
+const DATA_BASE='DBSISTEMAFINALSEXTO';//DBSISTEMAFINALSEXTO//dbsistemafinalsexto
 const CHARSET = 'charset=utf8';
 const TITLE='Venta';
 const MONEDA='Bs.';
