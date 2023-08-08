@@ -1,13 +1,14 @@
 <?php
 class Views{
-    public function getView($ruta,$vista,$data="")
+    public function getView($controlador,$vista,$data="")
     {
-        if($ruta=="inicio"){
+        if($controlador=="inicio"){
+
             $vista="app/Views/".$vista.".php";
         }
         else
         {
-            $vista="app/Views/".$ruta."/".$vista.".php";
+            $vista="app/Views/".$controlador."/".$vista.".php";
         }
         require $vista;
     }

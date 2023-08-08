@@ -1,5 +1,7 @@
 <?php
 class Controller{
+    //private $views;
+    //private $model;
     public function __construct()
     {
         $this->views = new Views();
@@ -13,10 +15,6 @@ class Controller{
         {
             require_once $ruta;
             $this->model = new $model();
-        }
-        else
-        {
-            die($ruta);
         }
     }
 }

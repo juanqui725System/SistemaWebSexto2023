@@ -1,7 +1,4 @@
 <?php
-//require_once 'app/Config/Controller.php';
-//require_once 'app/Config/Controller.php';
-// require_once 'app/Config/Views.php';
 class Inicio extends Controller
 {
     public function __construct()
@@ -12,8 +9,8 @@ class Inicio extends Controller
     public function index()
     {
         $data['title'] ="Pagina Principal";
-        $data['categorias'] =$this->model->getCategoria();
-        $this->views->getView('inicio','index',$data);
+        //$data['categorias'] =$this->model->getCategoria();
+        $this->views->getView('inicio','index',$data);//this=home
     }
    
 }

@@ -12,6 +12,25 @@ USE DBSISTEMAFINALSEXTO;
 -- Estructura de tabla para la tabla `categoria`
 --
 
+DROP TABLE IF EXISTS `usuario`;
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `USUARIO` varchar(50) NOT NULL,
+  `NOMBRE` varchar(100) NOT NULL,
+  `PASSWORD` varchar(100) NOT NULL,
+  `IDROL` INT NOT NULL,
+  `ESTADO` INT NOT NULL DEFAULT 1,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB;
+INSERT INTO(USUARIO,NOMBRE,PASSWORD,IDROL,ESTADO)
+VALUES('JUANQUI','JUAN CARLOS','123456',);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `categoria`
+--
+
 DROP TABLE IF EXISTS `categoria`;
 CREATE TABLE IF NOT EXISTS `categoria` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
