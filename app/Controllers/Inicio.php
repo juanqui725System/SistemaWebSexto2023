@@ -10,7 +10,7 @@ class Inicio extends Controller
     {
         $data['title'] ="Pagina Principal";
         //$data['categorias'] =$this->model->getCategoria();
-        $this->views->getView('inicio','index',$data);//this=home
+        $this->views->getView($this,'index',$data);//this=home   vista index.p
     }
    
 }

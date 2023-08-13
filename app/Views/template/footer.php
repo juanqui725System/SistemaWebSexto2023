@@ -16,18 +16,19 @@
 
 <!-- jQuery -->
 <script src="<?php echo BASE_URL;?>public/plugins/jquery/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="<?php echo BASE_URL;?>public/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- jQuery UI 1.11.4 
+<script src="<?php //echo BASE_URL;?>public/plugins/jquery-ui/jquery-ui.min.js"></script>-->
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button)
 </script>
-<!-- Bootstrap 4 -->
-<script src="<?php echo BASE_URL;?>public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap 4 
+<script src="<?php echo BASE_URL;?>public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+<script src="<?php echo BASE_URL;?>public/bootstrap5.2.3/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
 
-<!-- AdminLTE App -->
-<script src="<?php echo BASE_URL;?>public/dist/js/adminlte.js"></script>
+<!-- AdminLTE App 
+<script src="<?php //echo BASE_URL;?>public/dist/js/adminlte.js"></script>-->
 
 </body>
 </html>

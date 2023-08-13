@@ -7,7 +7,7 @@ class Errors extends Controller
     }
     public function index()
     {
-        $this->views->getView('errors','index');
+        $this->views->getView($this,'index');
     }
 }
 ?>

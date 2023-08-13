@@ -3,17 +3,19 @@ class Usuario extends Controller
 {
   public function __construct()
   {
-    session_start();
+    
     parent::__construct();
+    session_start();
     
   }
     public function index()
     {
-      /*  $data['title'] ="Pagina Principal";
-        //$data['categorias'] =$this->model->getCategoria();*/
+      
+       $data['title'] ="Pagina Principal";
+       /*  //$data['categorias'] =$this->model->getCategoria();*/
        // print_r($this->model->getUsuario())."<br>";
        // var_dump($this->model->getUsuario());
-        //$this->views->getView($this,'index');//,$data);
+        $this->views->getView($this,'index',$data);
     }
     
     public function validar()  {

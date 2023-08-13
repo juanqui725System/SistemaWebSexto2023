@@ -30,7 +30,15 @@ function frmLogin(e)
        var datos=new FormData(frm);
        fetch(url,{method:'POST',body:datos})
        .then(res=>res.json())
-       .then(data=>{console.log(data)})
+       .then(data=>
+        {
+            console.log(data)
+            if(data=="OK")
+            {
+                window.location=window.location.href+"Usuario";
+            }
+         }
+        )
        //faltaverificar y direccionar a index
     }
 }
