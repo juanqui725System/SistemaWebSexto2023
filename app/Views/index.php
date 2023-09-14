@@ -8,8 +8,7 @@
         <meta name="author" content="" />
         <title>Login - SB Admin</title>
         <link href="<?php echo BASE_URL; ?>public/Assets/css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/plugins/fontawesome-free/css/all.min.css">
-        <!-- <script src="<?php //echo BASE_URL; ?>public/Assets/js/all.min.js" crossorigin="anonymous"></script>-->
+        <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/fontawesome6.4.2/css/all.min.css">
     </head>
     <body class="bg-primary">
         <div id="layoutAuthentication">
@@ -30,9 +29,10 @@
                                                 <input class="form-control" id="password" name="password" type="password" placeholder="Contraseña" />
                                                 <label for="password"><i class="fas fa-key"></i>Contraseña</label>
                                             </div>
-                                            
+                                            <div class="alert alert-danger text-center d-none" id="alerta" role="alert">
+                                                
+                                            </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                              
                                                 <button class="btn btn-primary" type="submit" onclick="frmLogin(event);">Login</button>
                                             </div>
                                         </form>
@@ -48,20 +48,20 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div class="text-muted">Promoción 2023</div>
                             <div>
-                                <a href="#">Privacy Policy</a>
+                                <label>Unidad Educativa</label>
                                 &middot;
-                                <a href="#">Terms &amp; Conditions</a>
+                                <a href="#">Juan Pablo II UV.5</a>
                             </div>
                         </div>
                     </div>
                 </footer>
             </div>
         </div>
-        <script src="<?php echo BASE_URL;?>public/plugins/jquery/jquery.min.js"></script>
-        <script src="<?php echo BASE_URL;?>public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--<script src="<?php //echo BASE_URL;?>public/dist/jquery/jquery-3.7.0.min.js"></script>-->
+        <script src="<?php echo BASE_URL;?>public/bootstrap5.2.3/js/bootstrap.bundle.min.js"></script>
        <script src="<?php echo BASE_URL; ?>public/Assets/js/scripts.js"></script>
-        <script src="<?php echo BASE_URL; ?>public/js/funciones.js"></script>
+        <script src="<?php echo BASE_URL; ?>public/dist/js/funciones.js"></script>
     </body>
 </html>

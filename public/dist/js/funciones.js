@@ -32,13 +32,16 @@ function frmLogin(e)
        .then(res=>res.json())
        .then(data=>
         {
-            console.log(data)
             if(data=="OK")
             {
                 window.location=window.location.href+"Usuario";
             }
+            else
+            {
+                document.getElementById("alerta").classList.remove("d-none");
+                document.getElementById("alerta").innerHTML=data;
+             }
          }
         )
-       //faltaverificar y direccionar a index
     }
 }
